@@ -14,6 +14,7 @@ const Import = props => {
     <Button onClick={props.fetchMakes} color="primary" variant="contained">
         Import
       </Button>
+    <h2>COUNT: {props.makes.length}</h2>
       <Table aria-label="simple table">
         <TableHead>
           <TableRow>

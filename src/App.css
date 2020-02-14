@@ -3,3 +3,98 @@
   margin-top: 1em;
   margin-left: 1em;
 }
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@DavidAndreww 
+AustinCodingAcademy
+/
+411_wk6_day1_redux_thunk
+0
+032
+ Code Issues 0 Pull requests 3 Actions Projects 0 Wiki Security Insights
+411_wk6_day1_redux_thunk/src/App.css
+@mxviteri mxviteri initial commit
+efccb19 on Aug 26, 2019
+63 lines (50 sloc)  681 Bytes
+  
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 20vw;
+  margin: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+
+.add-car {
+  background: #4caf50 !important;
+  color: white !important;
+}
+
+.icon {
+  font-size: medium !important;
+}
+
+.icon:hover {
+  cursor: pointer
+}
+
+.text-gray {
+  color: gray
+}
+
+.text-red {
+  color: red
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list-item {
+  margin: auto 20px;
+}
+
+.car-container {
+  margin: 50px;
+}
+
+.car-paper {
+  padding: 50px;
+}
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
