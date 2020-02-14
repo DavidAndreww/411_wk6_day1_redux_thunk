@@ -28,7 +28,7 @@ console.log(JSON.stringify(props.makes))
             <TableRow key={row.MakeId}>
               <TableCell>{row.MakeId}</TableCell>
               <TableCell>{row.MakeName}</TableCell>
-              <TableCell>Actions Here</TableCell>
+              <TableCell><Button onClick={() => props.deleteMakes(row.MakeId)} color="secondary">Delete</Button></TableCell>
             </TableRow>
           ))}
         </TableBody>

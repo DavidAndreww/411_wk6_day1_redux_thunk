@@ -19,7 +19,8 @@ const makes = (state = [], action) => {
   switch (action.type) {
     case "FETCH_MAKES":
       return action.value;
-    case "DELETE_FETCH":
+    case "DELETE_MAKES":
+        console.log(action.value)
         return state
     default:
       return state;

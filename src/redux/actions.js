@@ -28,9 +28,9 @@ export const fetchMakes = () => {
     }
 }
 
-export const deleteFetch = (id) => {
+export const deleteMakes = (id) => {
     return {
-        type: 'DELETE_FETCH',
+        type: 'DELETE_MAKES',
         value: id
     }
 }
