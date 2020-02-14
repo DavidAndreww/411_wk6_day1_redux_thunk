@@ -9,7 +9,6 @@ import {
 } from "@material-ui/core";
 
 const Import = props => {
-console.log(JSON.stringify(props.makes))
   return (
     <div className="table-container">
     <Button onClick={props.fetchMakes} color="primary" variant="contained">
