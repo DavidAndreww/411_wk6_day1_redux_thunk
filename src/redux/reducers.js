@@ -20,8 +20,11 @@ const makes = (state = [], action) => {
     case "FETCH_MAKES":
       return action.value;
     case "DELETE_MAKES":
-        console.log(action.value)
-        return state
+      const makesState = [...state];
+      let findObject = makesState.find(x => x.MakeId === action.value);
+      let findIndex = makesState.indexOf(findObject);
+      makesState.splice(findIndex, 1);
+      return makesState;
     default:
       return state;
   }
