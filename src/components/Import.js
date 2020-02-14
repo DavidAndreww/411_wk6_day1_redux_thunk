@@ -8,17 +8,13 @@ import {
   TableCell
 } from "@material-ui/core";
 
-function createData(id, make, actions) {
-  return { id, make, actions };
-}
-
-const rows = [createData("1", "honda", "add")];
-
 const Import = props => {
-  // fill out this component
-
+console.log(JSON.stringify(props.makes))
   return (
     <div className="table-container">
+    <Button onClick={props.fetchMakes} color="primary" variant="contained">
+        Import
+      </Button>
       <Table aria-label="simple table">
         <TableHead>
           <TableRow>
@@ -28,18 +24,16 @@ const Import = props => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map(row => (
-            <TableRow key={row.id}>
-              <TableCell>{row.id}</TableCell>
-              <TableCell>{row.make}</TableCell>
-              <TableCell>{row.actions}</TableCell>
+          {props.makes.map(row => (
+            <TableRow key={row.MakeId}>
+              <TableCell>{row.MakeId}</TableCell>
+              <TableCell>{row.MakeName}</TableCell>
+              <TableCell>Actions Here</TableCell>
             </TableRow>
           ))}
         </TableBody>
       </Table>
-      <Button color="primary" variant="contained">
-        Import
-      </Button>
+      
     </div>
   );
 };
